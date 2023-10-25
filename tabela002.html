@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+   <!--
+        anatomia para tabelas grandes
+        table
+        caption
+        thead
+            tr, td , th
+        tbody
+             tr, td , th
+        tfoot
+            tr, td , th
+    -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STyle>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        col.ccA{
+            background-color: yellow;
+        }
+        col.cC{
+            background-color:green;
+        }
+    </STyle>
+</head>
+<body>
+    <h1> mesclagem de celulas</h1>
+    <table>
+        <colgroup>
+        <col class="cA">
+        <col class="cB">
+        <col class="cC">
+    </colgroup>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th scope="col">C</th>
+        </tr>
+        <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            
+            <td>L</td>
+            <td>M</td>
+        </tr>
+    </table>
+ 
+</body>
+</html>
